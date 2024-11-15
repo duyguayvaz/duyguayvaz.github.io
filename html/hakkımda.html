@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda - Duygu Ayvaz</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/hakkımda.css">
+    <script defer src="../js/scripts.js"></script>
+    <script defer src="../js/hakkımda.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navigasyon">
+            <img src="../images/logo.png" alt="Logo" class="logo">
+            <span class="logo-yazı">Duygu</span>
+        </div>
+        <div class="nav-sayfa">
+            <a href="../index.html">Anasayfa</a>
+            <a href="hakkımda.html">Hakkımda</a>
+            <a href="proje.html">Projelerim</a>
+        </div>
+    </nav>
+
+    <div class="hakkımda">
+        <div class="hakkımda-bio">
+            <h1>Hakkımda</h1>
+            <p>Merhaba, ben Duygu Ayvaz. Bilgisayar Mühendisliği öğrencisiyim ve web geliştirme ile ilgileniyorum.</p>
+            <p id="biyografi">
+                Web geliştirme ve tasarım alanında projeler geliştirerek deneyim kazanmayı hedefliyorum.
+                Hobilerim arasında basketbol oynamak, film izlemek, şarkı dinlemek ve doğa yürüyüşleri yapmak var.
+                Kendimi geliştirmek için farklı alanlarda çalışmalara devam ediyorum.
+                <!-- Başlangıçta gizli olan kısım -->
+                <span id="fazla-bio" style="display: none;">
+                    Her alanı deneyimleyip kendime en uygun alanı seçmem gerekiyor. Bu yüzden de farklı alanlarda bilgiler edinmeye çalışıyorum. Ayrıca ingilizcemi de geliştirmeye çalışıyorum çünkü bu bölümde ingilizce çok önemli.
+                    Ek olarak proje deneyimi kazanabilmek için her sene Teknofest ve TÜBİTAK yarışmalarına katılıyorum.
+                </span>
+            </p>
+            <!-- Daha Fazla Göster ve Daha Az Göster butonu -->
+            <button id="fazla-buton" onclick="toggleText()">Daha Fazla Göster</button>
+            <!-- onclick kısmı, butona tıkladığında js de toggleText() fonksiyonunu çağırmak içindir -->
+        </div>
+        <div class="görsel">
+            <img src="../images/hakkımda.jpg" alt="Duygu Ayvaz" />
+        </div>
+    </div>
+
+</body>
+</html>

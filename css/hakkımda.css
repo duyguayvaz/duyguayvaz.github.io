@@ -1,0 +1,76 @@
+.hakkımda {
+    /* felx ile hizalama yapar */
+    display: flex; 
+    /* içeriğin her yerine 50px boşluk */
+    padding: 50px;
+
+    /* içeriğin taşmasını önlemek için */
+    flex-wrap: wrap; 
+}
+
+.hakkımda-bio {
+    /* eşit kapsama sağlar */
+    flex: 1;
+
+    margin-right: 20px;
+
+    /* içerikleri sütunda(üst üste) hizalar */
+    flex-direction: column;
+}
+
+.görsel {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 100px; 
+    text-align: center;
+}
+
+.görsel img {
+    /* görselin maksimum genişliğini 300px yapar */
+    max-width: 300px; 
+
+    /* minimum genişlik 200px */
+    min-width: 200px; 
+
+    /* yüksekliği genişliğe göre otomatik ayarlar */
+    height: auto; 
+
+    /* belirtilen kalınlıkta ve renkte çerçeve yapar */
+    border: 5px solid #4a1e85;
+
+    /* çerçevenin kenarlarını 10px yuvarlar */
+    border-radius: 10px;
+    /* çerçevenin içindeki boşluğu 5px yapar */
+    padding: 5px;
+}
+
+/* Daha fazla göster butonu */
+#fazla-buton {
+    max-width: 150px; 
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #9274bb;
+    color: white;
+}
+
+#fazla-buton:hover {
+    background-color: #4a1e85;
+}
+
+/* Mobilde de uyumlu olması için */
+
+/* ekran genişliği 768px ve daha azı için */
+@media (max-width: 768px) {
+   
+    .görsel {
+        /* sol boşluğu kaldırır */
+        margin-left: 0;
+    }
+
+    .görsel img {
+        /* görsel genişliğinin maximum minimum ayarları */
+        max-width: 250px; 
+        min-width: 150px;
+    }
+}
+

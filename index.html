@@ -1,0 +1,87 @@
+ <!-- tarayıcıya bu belgenin bir HTML5 dökümanı olduğunu bildirir -->
+<!DOCTYPE html>
+
+<!-- tarayıcıya ve arama motorlarına sayfanın dilini tanımlar -->
+<html lang="tr">
+
+<!-- başlık kısmı -->
+<head>
+    <!-- karakter setini tanımlar, UTF-8 tüm dillerdeki karakterleri içerir -->
+    <meta charset="UTF-8">
+    <!-- sayfanın mobil uyumlu olması için yazılır.
+     width=device-width (sayfanın genişliğini cihaz ekranına göre ayarlar)
+     initial-scale=1.0 (varsayılan yakınlaşma seviyesini belirtir) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- sayfa başlığı, tarayıcı sekmesinde yazan kısım -->
+    <title>Duygu Ayvaz</title>
+    
+    <!-- sayfaya favicon ekler -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- css dosyasını entegre eder 
+     href etiketi dosyanın yolunu gösterir -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- js dosyasını entegre eder
+     defer etiketi js dosyasını sayfa tamamen yüklendikten sonra çalışmasını sağlar -->
+    <script defer src="js/scripts.js"></script>
+</head>
+
+<!-- tarayıcıda görünecek tüm kısım body etiketinin içindedir -->
+<body>
+
+    <!-- Navigasyon Menüsü -->
+
+    <!-- sayfadaki navigasyon bağlantılarını tanımlar -->
+    <nav>
+        <!-- div, gruplandırmak için kapsayıcı bir etikettir -->
+        <div class="navigasyon">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <!-- logonun yanındaki yazı -->
+        <span class="logo-yazı">Duygu</span>
+        </div>
+        <!-- a etiketi bağlantı oluşturur, href ise hedefi tanımlar -->
+         <!-- Bağlantıları saran bir div ekledik -->
+         <div class="nav-sayfa"> 
+            <a href="index.html">Anasayfa</a>
+            <a href="html/hakkımda.html">Hakkımda</a>
+            <a href="html/proje.html">Projelerim</a>
+        </div>
+    </nav>
+
+    <!-- Anasayfa -->
+
+    <!-- section etiketi belirli bi içeriğe sahip olan kısmı tanımlar 
+     id="anasayfa" kısmı o bölüme bi kimlik atar ve işaret ettirir -->
+    <section id="anasayfa">
+        <!-- en büyük başlık -->
+        <h1>HOŞ GELDİNİZ</h1>
+        <!-- ikinci derece başlık -->
+        <h2>Ben Duygu Ayvaz</h2>
+        <!-- normal yazı kısmı -->
+        <p> Bilgisayar Mühendisliği öğrencisiyim. </p> 
+        <!-- js dosyası için tarih ve saate id atar -->
+        <p id="tarih"></p> 
+        <p id="saat"></p> 
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="iletişim">
+        <h3>Benimle İletişime Geçin</h3>
+        <!-- type, girdinin tipini belirtir-->
+        <!-- name, kullanıcıya hangi isimle gönderileceğini gösterir  -->
+        <!-- placeholder, kullanıcıya alanın amacını gösteren yazı -->
+        <input type="text" id="isim" name="isim" placeholder="İsim">
+        <input type="email" id="email" name="email" placeholder="E-posta">
+        <!-- textarea, metin girşinde birden fazla satır olması durumunda kullanılır -->
+        <textarea id="mesaj" name="mesaj" placeholder="Mesaj" ></textarea>
+        
+        <button type="submit" id="gönder">Gönder</button>
+
+        <p id="hata"></p>
+        
+    </seciton>
+        
+</body>
+</html>

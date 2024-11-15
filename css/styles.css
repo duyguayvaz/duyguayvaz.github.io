@@ -1,0 +1,195 @@
+
+
+body {
+    /* varsayılan boşluklarını kaldırır */
+    margin: 0;
+    padding: 0;
+    /* arka plan görselini dosya yolundan alır */
+    background-image: url('../images/arkaplan.png');
+
+    /* görseli tam ekrana ayarlar */
+    background-size: cover; 
+
+    /* görseli tam ortalar */
+    background-position: center; 
+
+    /* görselin tekrarlanmasını engeller */
+    background-repeat: no-repeat; 
+
+    /* arka plan rengi ayarlar (eğer görsel yüklenmezse bu gözükür) */
+    background-color: #e2ceeb; 
+
+    /* sayfa kaydırıldığında arka planın sabit kalmasını sağlar */
+    background-attachment: fixed; 
+}
+
+nav {
+    /* yatay hizalama yapar */
+    display: flex; 
+
+    /* dikeyde ortalama yapar */
+    align-items: center; 
+
+    background-color: #4a1e85; 
+
+    /* nav menünün üst ve alt kısmına 30px, sağ ve sol kısmına 20px boşluk ekler */
+    padding: 30px 20px; 
+
+    font-size: 1.7em;
+}
+
+
+.navigasyon {
+    /* yatay hizalama */
+    display: flex; 
+
+    /* dikey hizalama */
+    align-items: center;
+}
+
+.logo {
+    /* Logonun genişliği */
+    width: 50px; 
+
+    /* yüksekliği otomatik ayarlayıp logonun oranını korur */
+    height: auto; 
+
+    /* logonun sağına 10px boşluk bırakır */
+    margin-right: 10px; 
+}
+
+.logo-yazı {
+
+    /* metinin rengi */
+    color: #e2ceeb; 
+
+    /* logo ile metin arasına 20px boşluk */
+    margin-left: 20px; 
+
+    font-size: 1.7em; 
+
+    /* metnin yazı stilini kalınlaştırır */
+    font-weight: bold; 
+}
+
+.nav-sayfa {
+    /* bağlantıları sağa itmek için otomatik soldan boşluk bırakır */
+    margin-left: auto; 
+}
+
+
+nav a {
+    color: #e2ceeb; 
+
+    /* bağlantıların altındaki çizgiyi kaldırır */
+    text-decoration: none; 
+
+    /* bağlantıların arasında 30px boşluk bırakır */
+    margin-left: 30px; 
+}
+
+nav a:hover {
+    /* hover durumunda rengi değiştirir */
+    color: #9274bb; 
+}
+
+section {
+    /* içerik kısmına tüm kenarlardan 35px boşluk bırakır */
+    padding: 35px; 
+
+    /* başlık ve paragrafları yatayda ortalar */
+    text-align: center; 
+}
+
+h1 {
+    /* başlığın alt tarafına 40px boşluk */
+    margin-bottom: 40px;
+
+    font-size: 4.5em; 
+
+    color: #4a1e85; 
+
+    /* aşağı kayma animasyonu */
+    animation: slideDown 1.5s forwards; 
+}
+
+
+h2 {
+    margin-bottom: 40px; 
+    font-size: 2.5em; 
+    color: #684397; 
+    animation: slideDown 3s forwards; 
+}
+
+@keyframes slideDown {
+    
+    from { 
+        /* y ekseninde 20px aşağı kaydırma */
+        transform: translateY(-20px); 
+        /* şeffaflık 0 yani görünmez */
+        opacity: 0; }
+    
+    to { 
+        /* y ekseninden başlangıç durumuna kaydırma */
+        transform: translateY(0); 
+        /* şeffaflık 1 yani tamamen görünür */
+        opacity: 1; }
+}
+
+p {
+    margin-bottom: 30px; 
+    font-size: 1.3em; 
+    color: #000000; 
+}
+
+
+#iletişim {
+    /* flex ile yatay veya dikey hizama */
+    display: flex;
+
+    /* hizalamayı dikeye çevirir */
+    flex-direction: column; 
+
+    /* içeriği ortalar */
+    align-items: center; 
+}
+
+#iletişim input,
+#iletişim textarea {
+    /* input ve textare nın genişliğini containerin %30'u genişliğinde yapar */
+    width: 30%;
+
+    /* içeriğin içinde kenarlara 10px boşluk bırakır */
+    padding: 10px; 
+
+    /* alt tarafa 10px boşluk */
+    margin-bottom: 10px; 
+
+    background-color: #e2ceeb;
+   
+}
+
+#iletişim button {
+    /* iç kısımda üst alt 10px, sağ sol 15px boşluk */
+    padding: 10px 15px; 
+
+    /* butonun üstüne gelince imleci el şekline çevirir */
+    cursor: pointer; 
+
+    background-color: #9274bb; 
+    color: white; 
+
+}
+
+#iletişim button:hover {
+    background-color: #4a1e85; 
+}
+
+#hata {
+    color: #4a1e85; 
+
+    /* error mesajın üst kısmına 5px boşlu */
+    margin-top: 5px; 
+    
+    font-size: 20px; 
+}
